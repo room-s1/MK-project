@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Linux")
 set(CMAKE_HOST_SYSTEM_VERSION "7.2.7-arch1-1")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
-include("/home/s1/Документы/stm32/Projects/STM32Timer-task-Now/cmake/gcc-arm-none-eabi.cmake")
+include("/home/s1/00-work/MK-project/stm32/Projects/STM32Timer-task-Now/cmake/gcc-arm-none-eabi.cmake")
 
 set(CMAKE_SYSTEM "Generic")
 set(CMAKE_SYSTEM_NAME "Generic")

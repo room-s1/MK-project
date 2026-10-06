@@ -62,7 +62,7 @@ rule C_COMPILER__STM32_Drivers_unscanned_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S/home/s1/Документы/stm32/Projects/STM32Timer-task-Now -B/home/s1/Документы/stm32/Projects/STM32Timer-task-Now/build/Debug
+  command = /usr/bin/cmake --regenerate-during-build -S/home/s1/00-work/MK-project/stm32/Projects/STM32Timer-task-Now -B/home/s1/00-work/MK-project/stm32/Projects/STM32Timer-task-Now/build/Debug
   description = Re-running CMake...
   generator = 1
 

@@ -1,4 +1,4 @@
-/home/s1/Документы/stm32/Projects/STM32Timer-task-Now/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c:94:30:HAL_FLASHEx_StopFlashInterfaceClk	16	static
-/home/s1/Документы/stm32/Projects/STM32Timer-task-Now/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c:111:30:HAL_FLASHEx_StartFlashInterfaceClk	16	static
-/home/s1/Документы/stm32/Projects/STM32Timer-task-Now/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c:128:30:HAL_FLASHEx_EnableFlashSleepMode	16	static
-/home/s1/Документы/stm32/Projects/STM32Timer-task-Now/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c:145:30:HAL_FLASHEx_DisableFlashSleepMode	16	static
+/home/s1/00-work/MK-project/stm32/Projects/STM32Timer-task-Now/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c:94:30:HAL_FLASHEx_StopFlashInterfaceClk	16	static
+/home/s1/00-work/MK-project/stm32/Projects/STM32Timer-task-Now/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c:111:30:HAL_FLASHEx_StartFlashInterfaceClk	16	static
+/home/s1/00-work/MK-project/stm32/Projects/STM32Timer-task-Now/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c:128:30:HAL_FLASHEx_EnableFlashSleepMode	16	static
+/home/s1/00-work/MK-project/stm32/Projects/STM32Timer-task-Now/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c:145:30:HAL_FLASHEx_DisableFlashSleepMode	16	static
