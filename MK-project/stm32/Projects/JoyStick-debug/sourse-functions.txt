@@ -1,0 +1,49 @@
+/*
+функции, быстрое готовое решение
+файл пополняемый
+*/
+
+
+/*
+вывод любых данных по USB, натроить blackpill для USB OTG + добавить как COM PORT
+библиотеки: 
+#include <stdio.h>
+#include "usb_device.h"
+#include "usbd_cdc_if.h"
+#include <string.h>
+#include <stdarg.h>
+Работает как printf, нужен объявленный буффер.
+*/
+
+void usb_printf(const char* format, ...)
+{
+  va_list args;
+  va_start(args, format);
+  int len = vsnprintf((char*)usb_buffer, sizeof(usb_buffer), format, args);
+  va_end(args);
+  if (len > 0 && len < sizeof(usb_buffer))
+  {
+    CDC_Transmit_FS(usb_buffer, len);
+    HAL_Delay(20);
+  }
+}
+
+
+/*
+индикатор, простой блинк. 
+задаем мигание диода, допконтроль дебага платы
+встроенный диод на blackpill на PC13
+библиотки: standart HAL STM32
+*/
+
+void blink_led(int times, int delay_ms)
+{
+  for (int i = 0; i < times; i++)
+  {
+    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
+    HAL_Delay(delay_ms);
+    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+    HAL_Delay(delay_ms);
+  }
+}
+

@@ -1,0 +1,33 @@
+{
+    "cmake.useCMakePresets": "always",
+    "cmake.configurePreset": "Debug",
+    "cmake.buildPreset": "Debug",
+
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/build/Debug",
+        "--query-driver=/usr/bin/arm-none-eabi-*",
+        "--background-index",
+        "--completion-style=detailed",
+        "--header-insertion=never",
+        "--pch-storage=memory"
+    ],
+
+    "C_Cpp.intelliSenseEngine": "disabled",
+
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+
+    "[c]":   { "editor.defaultFormatter": "xaver.clang-format" },
+    "[cpp]": { "editor.defaultFormatter": "xaver.clang-format" },
+    "[h]":   { "editor.defaultFormatter": "xaver.clang-format" },
+
+    "clang-format.executable": "/usr/bin/clang-format",
+    "clang-format.style": "file",
+
+    "files.associations": {
+        "*.c": "c",
+        "*.h": "c",
+        "*.s": "asm"
+    }
+}

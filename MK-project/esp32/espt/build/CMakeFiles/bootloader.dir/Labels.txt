@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/s1/Документы/esp32/espt/build/CMakeFiles/bootloader
+/home/s1/Документы/esp32/espt/build/CMakeFiles/bootloader.rule
+/home/s1/Документы/esp32/espt/build/CMakeFiles/bootloader-complete.rule
+/home/s1/Документы/esp32/espt/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/s1/Документы/esp32/espt/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/s1/Документы/esp32/espt/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/s1/Документы/esp32/espt/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/s1/Документы/esp32/espt/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/s1/Документы/esp32/espt/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/s1/Документы/esp32/espt/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

@@ -1,0 +1,90 @@
+Command: /home/s1/.espressif/python_env/idf6.0_py3.14_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/s1/Документы/esp32/00-test-prj/build/hello_world.elf /home/s1/Документы/esp32/00-test-prj/build/bootloader/bootloader.elf -m '/home/s1/.espressif/python_env/idf6.0_py3.14_env/bin/python' '/opt/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB0'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr  9 2026 05:38:07[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (31) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=06994h ( 27028) map[0m
+[0;32mI (96) esp_image: segment 1: paddr=000169bc vaddr=3ffb0000 size=027ach ( 10156) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=00019170 vaddr=40080000 size=06ea8h ( 28328) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=0b678h ( 46712) map[0m
+[0;32mI (129) esp_image: segment 4: paddr=0002b6a0 vaddr=40086ea8 size=034d8h ( 13528) load[0m
+[0;32mI (135) esp_image: segment 5: paddr=0002eb80 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (141) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (141) boot: Disabling RNG early entropy source...[0m
+[0;32mI (155) cpu_start: Multicore app[0m
+[0;32mI (163) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (163) cpu_start: Pro cpu start user code[0m
+[0;32mI (163) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (165) app_init: Application information:[0m
+[0;32mI (169) app_init: Project name:     hello_world[0m
+[0;32mI (173) app_init: App version:      1[0m
+[0;32mI (177) app_init: Compile time:     Apr  9 2026 05:38:01[0m
+[0;32mI (182) app_init: ELF file SHA256:  9596ec906...[0m
+[0;32mI (186) app_init: ESP-IDF:          v6.0[0m
+[0;32mI (190) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (194) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (198) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (202) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (208) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (213) heap_init: At 3FFB30F0 len 0002CF10 (179 KiB): DRAM[0m
+[0;32mI (218) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (223) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (229) heap_init: At 4008A380 len 00015C80 (87 KiB): IRAM[0m
+[0;32mI (235) spi_flash: detected chip: generic[0m
+[0;32mI (238) spi_flash: flash io: dio[0m
+[0;33mW (241) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (254) main_task: Started on CPU0[0m
+[0;32mI (264) main_task: Calling app_main()[0m
+[0;32mI (264) CHIP_INFO: === ESP32 Chip Info ===[0m
+[0;32mI (264) CHIP_INFO: Model: ESP32[0m
+[0;32mI (264) CHIP_INFO: Cores: 2[0m
+[0;32mI (264) CHIP_INFO: Revision: v3.1[0m
+[0;32mI (264) CHIP_INFO: === Test pow() speed ===[0m
+[0;32mI (274) CHIP_INFO: Iterations: 10[0m
+[0;32mI (274) CHIP_INFO: === Values of pow(x, 1.5) ===[0m
+[0;32mI (274) CHIP_INFO: pow(1, 1.5) = 1.0000[0m
+[0;32mI (284) CHIP_INFO: pow(2, 1.5) = 2.8284[0m
+[0;32mI (284) CHIP_INFO: pow(3, 1.5) = 5.1962[0m
+[0;32mI (284) CHIP_INFO: pow(4, 1.5) = 8.0000[0m
+[0;32mI (294) CHIP_INFO: pow(5, 1.5) = 11.1803[0m
+[0;32mI (294) CHIP_INFO: pow(6, 1.5) = 14.6969[0m
+[0;32mI (304) CHIP_INFO: pow(7, 1.5) = 18.5203[0m
+[0;32mI (304) CHIP_INFO: pow(8, 1.5) = 22.6274[0m
+[0;32mI (304) CHIP_INFO: pow(9, 1.5) = 27.0000[0m
+[0;32mI (314) CHIP_INFO: pow(10, 1.5) = 31.6228[0m
+[0;32mI (314) CHIP_INFO: Sum of all values: 142.6723[0m
+[0;32mI (314) CHIP_INFO: === Speed test with 100000 iterations ===[0m
+[1;31mE (5264) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (5264) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (5264) task_wdt: Tasks currently running:[0m
+[1;31mE (5264) task_wdt: CPU 0: main[0m
+[1;31mE (5264) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (5264) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D555A:0x3FFB0FC0 0x400D592C:0x3FFB0FE0 0x40082A9D:0x3FFB1010 0x400029AC:0x3FFB4290 0x400D8357:0x3FFB42A0 0x400D4013:0x3FFB4310 0x400D416F:0x3FFB4390 0x400D37EE:0x3FFB43D0 0x400D9609:0x3FFB4400
+
+[0;32mI (5634) CHIP_INFO: Total time: 5314.49 ms[0m
+[0;32mI (5634) CHIP_INFO: Time per pow(): 53.14 us[0m
+[0;32mI (5634) CHIP_INFO: Total result (partial): 1264926875495.16[0m
+[0;32mI (5644) main_task: Returned from app_main()[0m

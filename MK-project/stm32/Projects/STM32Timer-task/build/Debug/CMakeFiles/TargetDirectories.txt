@@ -1,0 +1,6 @@
+/home/s1/Документы/stm32/Projects/STM32Timer-task/build/Debug/CMakeFiles/STM32Timer-task.dir
+/home/s1/Документы/stm32/Projects/STM32Timer-task/build/Debug/CMakeFiles/edit_cache.dir
+/home/s1/Документы/stm32/Projects/STM32Timer-task/build/Debug/CMakeFiles/rebuild_cache.dir
+/home/s1/Документы/stm32/Projects/STM32Timer-task/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+/home/s1/Документы/stm32/Projects/STM32Timer-task/build/Debug/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+/home/s1/Документы/stm32/Projects/STM32Timer-task/build/Debug/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

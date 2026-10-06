@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/s1/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/stm32/Projects/STM32Timer-task-Now/build/Debug/cmake_install.cmake",
+		"/home/s1/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/stm32/Projects/STM32Timer-task-Now/build/Debug/cmake/stm32cubemx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

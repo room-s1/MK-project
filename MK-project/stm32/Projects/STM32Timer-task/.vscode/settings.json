@@ -1,0 +1,64 @@
+{
+    // ============================================
+    // АВТОФОРМАТИРОВАНИЕ
+    // ============================================
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    
+    // ============================================
+    // Для C файлов используем clang-format
+    // ============================================
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[h]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    
+    // ============================================
+    // Настройка clang-format расширения
+    // ============================================
+    "clang-format.executable": "/usr/bin/clang-format",
+    "clang-format.style": "file",
+    "clang-format.fallbackStyle": "Google",
+    
+    // ============================================
+    // Настройка clangd
+    // ============================================
+    "clangd.path": "/usr/bin/clangd",
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/build",
+        "--query-driver=/usr/bin/arm-none-eabi-gcc",
+        "--background-index",
+        "--clang-tidy",
+        "--header-insertion=iwyu"
+    ],
+    
+    // ============================================
+    // Отключаем стандартный C/C++ IntelliSense
+    // (иначе конфликтует с clangd)
+    // ============================================
+    "C_Cpp.intelliSenseEngine": "disabled",
+    
+    // ============================================
+    // Настройки CMake Tools (опционально)
+    // ============================================
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.configureSettings": {
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+    },
+    
+    // ============================================
+    // Файловые ассоциации
+    // ============================================
+    "files.associations": {
+        "*.c": "c",
+        "*.h": "c",
+        "*.s": "asm"
+    }
+}
